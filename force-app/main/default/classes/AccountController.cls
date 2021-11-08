@@ -1,5 +1,12 @@
 public with sharing class AccountController {
-    public static List<Account> getAllActiveAccounts() {
-      return [SELECT Id,Name,Active__c FROM Account WHERE Active__c = 'Yes'];
+    public static List<Account> getAllActiveAccounts(List<Account> oldl,List<Account> newl) {
+    
+    for(Account acc:old1)
+    {System.debug("old 1");}
+    for(Account acc:new1)
+    {
+      System.debug("new1");
+    }
+    
     }
   }
